@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <stdbool.h>
+#include <stdio.h>
 
 #define PLAYER_1 1
 #define PLAYER_2 2
@@ -26,15 +26,17 @@ int main(void)
         char main_board[3][3] = { {'1', '2', '3'}, {'4', '5', '6'}, {'7', '8', '9'} };
         winner = 0; 
 
-        // starting msg for each game
+        // starting message for each game
         printf("\tPress 1 to start a New game... \n\tTo exit press 0\n\n");
         scanf("%d", &choice);
         printf("\n\n");
 
-        // exit msg
+        // exit message
         if (choice == 0)
         {
             printf("\n\n\t\t******** THANK YOU FOR PLAYING! GOODBYE! ********\n");
+            // waiting for a bit before closing the application terminal
+            sleep(3);
             break;
         }
         // gaming part
@@ -78,7 +80,7 @@ int main(void)
                 }
             }
         }
-        // error msg for invalid input
+        // error message for invalid input
         else
         {
             printf("Invalid choice! Please enter 1 to start or 0 to exit.\n");
@@ -233,7 +235,7 @@ void finding_winner(char board[3][3])
 
 bool is_draw(char board[3][3])
 {
-    // cheching draw
+    // checking draw
     for (int c = 0; c < 3; c++)
     {
         for (int d = 0; d < 3; d++)
