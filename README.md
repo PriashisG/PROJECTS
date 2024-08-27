@@ -1,3 +1,3 @@
-Open main.c file & copy all the codes
+Open main.c file & copy all the codes.
 Then go to any c program online compiler or click here https://www.programiz.com/c-programming/online-compiler/
 Run the program & enjoy the game....
