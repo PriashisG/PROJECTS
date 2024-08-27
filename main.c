@@ -46,8 +46,8 @@ int main(void)
                 // taking input from player 1
                 taking_input(main_board, PLAYER_1);
                 main_board[col][row] = 'X';
-                finding_winner(main_board);
                 printing_board(main_board);
+                finding_winner(main_board);
                 if (winner == 1)
                 {
                     printf("\n\n\t\t******** PLAYER 1 IS WINNER ******** \n");
@@ -63,8 +63,8 @@ int main(void)
                 // taking input from player 2
                 taking_input(main_board, PLAYER_2);
                 main_board[col][row] = 'O';
-                finding_winner(main_board);
                 printing_board(main_board);
+                finding_winner(main_board);
                 if (winner == 2)
                 {
                     printf("\n\n\t\t******** PLAYER 2 IS WINNER ******** \n");
